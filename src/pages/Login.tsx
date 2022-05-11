@@ -12,7 +12,7 @@ const Login = () => {
   const { signIn } = useAuth();
 
   const onSubmit = useCallback(() => {
-    signIn(email, password);
+    signIn({ email, password });
   }, [email, password]);
 
   return (
